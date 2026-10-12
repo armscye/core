@@ -110,7 +110,8 @@ pnpm format      # Prettier
 | `build`             | Cleans and compiles `src/` to `dist/`       |
 | `clean`             | Removes `dist/`                             |
 | `typecheck`         | Type-checks sources, tests and config files |
-| `lint` / `lint:fix` | Runs ESLint, optionally fixing what it can  |
+| `lint`              | Runs ESLint                                 |
+| `lint:fix`          | Runs ESLint and fixes what it can           |
 | `format`            | Formats every file with Prettier            |
 | `format:check`      | Fails if any file is not formatted          |
 | `test`              | Runs the type tests                         |
