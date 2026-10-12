@@ -7,6 +7,8 @@
 ```sh
 npm install --save-dev @armscye/core
 # or
+yarn add --dev @armscye/core
+# or
 pnpm add -D @armscye/core
 ```
 
