@@ -1,6 +1,6 @@
 {
   "name": "@armscye/core",
-  "version": "0.5.0",
+  "version": "0.4.3",
   "description": "A collection of shared TypeScript types - classes, constructors, and more.",
   "keywords": [
     "armscye",
