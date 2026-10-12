@@ -1,6 +1,6 @@
 # @armscye/core
 
-> A collection of shared TypeScript types.
+> A collection of shared TypeScript types - classes, constructors, and more.
 
 ## Install
 
