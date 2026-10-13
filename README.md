@@ -139,6 +139,10 @@ docs: clarify usage               → no version bump on its own
 chore(deps): update vitest to v5  → no version bump on its own
 ```
 
+Until 1.0.0 every bump is one level lower (`preMajor` in
+`.release-it.json`): a breaking change is a minor release and a `feat` is a
+patch release.
+
 Renovate opens its PRs as `chore(deps): …`, so dependency updates never
 appear in the changelog.
 
