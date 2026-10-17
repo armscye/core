@@ -20,8 +20,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # The oldest supported version (engines.node) and the current LTS.
-        node: ['20.19.0', 'lts/*']
+        # The oldest supported version (engines.node), then each newer line.
+        node: ['22.12.0', '24', '26']
     steps:
       - uses: actions/checkout@v7
       - uses: pnpm/action-setup@v6
@@ -44,7 +44,7 @@ jobs:
       - uses: pnpm/action-setup@v6
       - uses: actions/setup-node@v7
         with:
-          node-version: lts/*
+          node-version-file: .nvmrc
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       # Packs the tarball (building first) and checks what consumers get.
@@ -58,7 +58,7 @@ jobs:
       - uses: pnpm/action-setup@v6
       - uses: actions/setup-node@v7
         with:
-          node-version: lts/*
+          node-version-file: .nvmrc
       - run: pnpm run renovate:validate
 
   # The only check the main branch ruleset requires, so the jobs above can be
